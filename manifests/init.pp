@@ -6,8 +6,7 @@
 #
 class toggl {
   package { 'Toggl':
-    ensure   => present,
-    provider => 'appdmg',
+    provider => 'appdmg_eula',
     source   => 'https://toggl.com/api/v8/installer?app=td&platform=darwin&channel=stable'
   }
 }
